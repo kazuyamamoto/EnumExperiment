@@ -5,15 +5,15 @@ namespace EnumExperiment
     /// </summary>
     public class Expression
     {
+        private readonly Operator _operator;
         private readonly int _left;
         private readonly int _right;
-        private readonly Operator _operator;
 
-        public Expression(int left, int right, Operator op)
+        public Expression(Operator op, int left, int right)
         {
+            _operator = op;
             _left = left;
             _right = right;
-            _operator = op;
         }
 
         public int Evaluate()

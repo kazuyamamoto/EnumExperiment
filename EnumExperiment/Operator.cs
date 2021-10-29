@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace EnumExperiment
 {
@@ -15,8 +13,18 @@ namespace EnumExperiment
         Divide
     }
 
-    public static class OperatorExtension
+    /// <summary>
+    /// <see cref="Operator"/> に振る舞いを提供する拡張クラス。
+    /// </summary>
+    public static class OperatorOperation
     {
+        /// <summary>
+        /// 演算を行う。
+        /// </summary>
+        /// <param name="op">演算子</param>
+        /// <param name="left">左辺</param>
+        /// <param name="right">右辺</param>
+        /// <returns>演算結果</returns>
         public static int Operate(this Operator op, int left, int right)
         {
             return Operations[op].Operate(left, right);
