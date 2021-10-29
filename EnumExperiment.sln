@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumExperiment", "EnumExperiment\EnumExperiment.csproj", "{8DA7B243-AB71-4FD7-9EF5-E365114C264B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumExperimentTest", "EnumExperimentTest\EnumExperimentTest.csproj", "{95A71BCD-933B-4AA7-861C-957D64A108D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DA7B243-AB71-4FD7-9EF5-E365114C264B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA7B243-AB71-4FD7-9EF5-E365114C264B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA7B243-AB71-4FD7-9EF5-E365114C264B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA7B243-AB71-4FD7-9EF5-E365114C264B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A71BCD-933B-4AA7-861C-957D64A108D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A71BCD-933B-4AA7-861C-957D64A108D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A71BCD-933B-4AA7-861C-957D64A108D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A71BCD-933B-4AA7-861C-957D64A108D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
