@@ -25,10 +25,7 @@ namespace EnumExperiment
         /// <param name="left">左辺</param>
         /// <param name="right">右辺</param>
         /// <returns>演算結果</returns>
-        public static int Operate(this Operator op, int left, int right)
-        {
-            return Operations[op].Operate(left, right);
-        }
+        public static int Operate(this Operator op, int left, int right) => Operations[op].Operate(left, right);
 
         private interface IOperation
         {
@@ -37,34 +34,22 @@ namespace EnumExperiment
 
         private class AddOperation : IOperation
         {
-            public int Operate(int left, int right)
-            {
-                return left + right;
-            }
+            public int Operate(int left, int right) => left + right;
         }
 
         private class SubtractOperation : IOperation
         {
-            public int Operate(int left, int right)
-            {
-                return left - right;
-            }
+            public int Operate(int left, int right) => left - right;
         }
 
         private class MultiplyOperation : IOperation
         {
-            public int Operate(int left, int right)
-            {
-                return left * right;
-            }
+            public int Operate(int left, int right) => left * right;
         }
 
         private class DivideOperation : IOperation
         {
-            public int Operate(int left, int right)
-            {
-                return left / right;
-            }
+            public int Operate(int left, int right) => left / right;
         }
 
         private static readonly IDictionary<Operator, IOperation> Operations = new Dictionary<Operator, IOperation>
